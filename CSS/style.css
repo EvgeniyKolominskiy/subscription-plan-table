@@ -5,3 +5,84 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+:root {
+	--first-color-table: #F3F3F3;
+	--second-color-table: #E7E7E7;
+	--third-color-table: #DBDBDB;
+	--thead-color-table: #061539;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	border-radius: 10px;
+}
+
+th, td {
+	/*border: 1px solid red;*/
+}
+
+thead {
+	color: #fff;
+}
+
+thead tr th:first-child {
+	width: 295px;
+	height: 185px;
+	background-color: var(--thead-color-table);
+	opacity: 0.6;
+}
+
+thead tr th:nth-child(2) {
+	width: 190px;
+	background-color: var(--thead-color-table);
+	opacity: 0.7;
+}
+
+tr th:nth-child(3) {
+	width: 190px;
+	background-color: var(--thead-color-table);
+	opacity: 0.8;
+}
+
+tr th:nth-child(4) {
+	width: 190px;
+	background-color: var(--thead-color-table);
+	opacity: 0.9;
+}
+
+thead tr th:last-child {
+	width: 200px;
+	background-color: var(--thead-color-table);
+}
+
+
+
+tbody tr:nth-child(odd) td:nth-child(odd) {
+	background-color: var(--third-color-table);
+}
+
+tbody tr:nth-child(odd) td:nth-child(even) {
+	background-color: var(--second-color-table);
+}
+
+tbody tr:nth-child(even) td:nth-child(odd) {
+	background-color: var(--second-color-table);
+}
+
+tbody tr:nth-child(even) td:nth-child(even) {
+	background-color: var(--first-color-table);
+}
+
+tfoot tr:nth-child(odd) td:nth-child(odd) {
+	background-color: var(--third-color-table);
+}
+
+tfoot tr:nth-child(odd) td:nth-child(even) {
+	background-color: var(--second-color-table);
+}
